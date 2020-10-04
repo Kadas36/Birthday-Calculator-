@@ -6,6 +6,7 @@ console.log(doc);
 function dayCalculator(e){
     e.preventDefault();
     let userBirthDate = document.getElementById('birthDate').value.split('-');
+
     let MM = parseInt(userBirthDate[1]);
     let DD = parseInt(userBirthDate[2]);
     let CCYY = userBirthDate[0].split('');
@@ -14,6 +15,9 @@ function dayCalculator(e){
     let d1 =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7 /*day of the week*/
     let d = Math.floor(d1*10);
 
-    console.log(d);
+    let userGender = document.getElementById('gender').value;
+
+
+    console.log(CC);
     
 }  
