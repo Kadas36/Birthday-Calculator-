@@ -16,8 +16,18 @@ function dayCalculator(e){
     let d = Math.floor(d1*10);
 
     let userGender = document.getElementById('gender').value;
+    
+    let maleAkan = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    let femaleAkan = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
-
-    console.log(CC);
+    if(userGender === 'male' && d >= 0 && d <= 6){
+        console.log(maleAkan[d])
+    }
+    else if(userGender === 'female' && d >= 0 && d <= 6){
+        console.log(femaleAkan[d])
+    }
+    else {
+        console.log("Insert correct Date and select gender!")
+    };
     
 }  
