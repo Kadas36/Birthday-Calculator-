@@ -21,13 +21,13 @@ function dayCalculator(e){
     let femaleAkan = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
     if(userGender === 'male' && d >= 0 && d <= 6){
-        console.log(maleAkan[d])
+        document.getElementById('response').innerHTML = "Your Akan name is: " + maleAkan[d]
     }
     else if(userGender === 'female' && d >= 0 && d <= 6){
-        console.log(femaleAkan[d])
+        document.getElementById('response').innerHTML = "Your Akan name is: " + femaleAkan[d]
     }
     else {
-        console.log("Insert correct Date and select gender!")
+        document.getElementById('response').innerHTML = "Please input correct Date format and select gender!"
     };
     
 }  
