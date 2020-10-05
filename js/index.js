@@ -33,7 +33,7 @@ function dayCalculator(e){
         }
     }    
     else {
-        document.getElementById('response').innerHTML = "Invalid Date!"
+        alert("Please enter a valid Date.")
     }    
     
     document.getElementById("formSubmit").reset();
